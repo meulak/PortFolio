@@ -42,6 +42,26 @@ nav ul li{
 nav ul li:hover{
   border-bottom: 1px solid rgb(255, 255, 255);
 }
+.contenu-page{
+  margin: 4%;
+}
+.contenu-page header{
+  max-width: 80%;
+}
+.contenu-page header h1{
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'oswald', sans-serif;
+  font-size: 5 vw;
+}
+.contenu-page header p{
+  line-height: 30px;
+  color: #818181;
+}
+.contenu-page header a:hover{
+  color: #af8080;
+  cursor: pointer;
+}
 @media screen and (max-width: 700px) {
   nav{
     justify-content: center;
@@ -49,6 +69,10 @@ nav ul li:hover{
   nav ul{
     display: none;
   } 
+  .contenu-page header{
+    margin-top: 20px;
+    max-width: 100%;
+  }
 }
 a{
   color: #5fa9ee;
