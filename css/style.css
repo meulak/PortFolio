@@ -1,12 +1,17 @@
-@media (prefers-color-scheme: dark)
-{
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,700&display=swap');
+:root{
+  --background-color: #efe7e5;
+  --text-color: black;
+}
 body{
   padding: 0 2%;
-  margin: 0;
-  font-family: 'Ubuntu', sans-serif;
-  background-color: #1c1c1e;
-  color: #fefefe;
+  margin: 3% 15%;
+  font-family: 'roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+p{
+  line-height: 25px;
 }
 nav{
   display: flex;
@@ -15,20 +20,14 @@ nav{
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: #000;
 }
 nav .profile{
   display: flex;
   align-items: center;
 }
-nav .profile img{
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
 nav .profile h1{
   margin-left: 10px;
-  font-size: 15px;
+  font-size: 25px;
 }
 nav ul{
   display: flex;
@@ -46,17 +45,52 @@ nav ul li:hover{
   margin: 4%;
 }
 .contenu-page header{
-  max-width: 80%;
+  margin-top: 60px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.contenu-page header h1{
+.contenu-page header .left{
+  flex: 6;
+  margin-right: 50px;
+}
+.contenu-page header .left small{
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.contenu-page header .right{
+  flex: 5;
+}
+.contenu-page header .left h1{
+  margin-top: 15px;
   margin: 0;
   text-transform: uppercase;
   font-family: 'oswald', sans-serif;
-  font-size: 5 vw;
+  font-size: 25px;
 }
-.contenu-page header p{
+.contenu-page header .left p{
   line-height: 30px;
   color: #818181;
+}
+.contenu-page header .left .liens{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.contenu-page header .left .liens a{
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  font-weight: bold;
+}
+.contenu-page header .right img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 .contenu-page header a:hover{
   color: #af8080;
@@ -64,6 +98,7 @@ nav ul li:hover{
 }
 
 .contenu-page .image-presentation img{
+  margin-top: 20px;
   max-width: 100%;
   height: auto;
   filter: brightness(50%);
@@ -149,5 +184,4 @@ a{
 }
 img{
   filter: grayscale(20%);
-}
 }
