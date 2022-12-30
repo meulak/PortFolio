@@ -158,8 +158,16 @@ footer .colonne p:hover{
     display: none;
   } 
   .contenu-page header{
+    flex-direction: column-reverse;
+    margin-right: 0;
     margin-top: 20px;
     max-width: 100%;
+  }
+  .contenu-page header .right{
+    margin-bottom: 20px;
+  }
+  .contenu-page header .right img{
+    width: 250px;
   }
   .contenu-page .section-projet{
     margin-top: 7%;
